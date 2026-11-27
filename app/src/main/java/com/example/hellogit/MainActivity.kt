@@ -53,7 +53,7 @@ fun CounterScreen() {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { count++ }) {
-            Text("Tap me")
+            Text("Add one")
         }
     }
 }
