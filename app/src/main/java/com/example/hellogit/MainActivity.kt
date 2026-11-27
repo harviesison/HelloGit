@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -54,6 +55,10 @@ fun CounterScreen() {
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { count++ }) {
             Text("Add one")
+        }
+        Spacer(Modifier.height(8.dp))
+        OutlinedButton(onClick = { count = 0 }) {
+            Text("Reset")
         }
     }
 }
